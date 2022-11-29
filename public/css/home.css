@@ -61,7 +61,7 @@ body{
     color: -webkit-link;
     cursor: pointer;
     text-decoration: underline;
-    color: #8d4c16;
+    color: rgb(105, 5, 5);;
 }
 .hamburger{
     display:none;
@@ -76,11 +76,13 @@ body{
 .navbar{
     min-height: 70px;
     display:flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items:center;
     padding:0 24px;
-    background-color: #bebebe;/* borrar este */
-    width: 100%;
+    width: 88%;
+}
+.navbar-Nombre{
+    color: #bebebe;
 }
 .burguer{
     display: flex;
@@ -90,6 +92,7 @@ body{
 }
 .nav-link{
     transition: 0.7s ease;
+    color: cadetblue;
 }
 .nav-link:hover{
     color: rgb(105, 5, 5);
@@ -104,7 +107,7 @@ body{
     height: 3px;
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.8s ease-in-out;
     background-color: white;
 }
 @media (max-width: 375px){
@@ -113,12 +116,15 @@ body{
     }
     .hamburger.active .bar:nth-child(2){
         opacity: 0;
+        margin: none;
     }
     .hamburger.active .bar:nth-child(1){
         transform: translateY(8px) rotate(45deg);
+        margin: none;
     }
     .hamburger.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
+        margin: none;
     }
     .burguer{
         position: fixed;
@@ -138,6 +144,12 @@ body{
     .burguer.active{
         left:0;
     }
+    .navbar{
+        position: fixed;
+        z-index: 1;
+        backdrop-filter: blur(15px);
+        background: rgba(41,41,41,.3);
+    }
 }
 
  
@@ -148,7 +160,7 @@ body{
     display: flex;
     flex-direction: column;
     height: 100vh;
-    justify-content: center;
+    justify-content: flex-end;
     object-fit: contain;
    
     
@@ -160,6 +172,13 @@ body{
     width: 100%;
     z-index: -1;
 }
+.titulo-span{
+    color: #6d0f1c;
+    font-size: 60px;
+}
+.titulo1{
+    font-size: 25px;
+}
 
 .tituloHome{
     font-size: 300%;
@@ -167,8 +186,8 @@ body{
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-
 }
+
 .titulo2Home{
     padding: 20px;
     color: antiquewhite;
@@ -273,8 +292,8 @@ i {
 .about{
     width: 100%;
    
-    background-color: white;
-    color: black;
+    background-color: #262626;
+    color: #eee;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -290,8 +309,10 @@ i {
 }
 .button-CVespañol-1{
     margin: 40px;
+    display: flex;
+    justify-content: center;
  }
- .button-CVespañol-2{
+/*  .button-CVespañol-2{
         width: 120px;
         padding: 10px 25px;
         border: 1px solid #f6f6f6;
@@ -303,11 +324,79 @@ i {
         opacity: 1;
         text-decoration: none;
         
- }
-.button-CVespañol-2:hover {
+ } */
+/* .button-CVespañol-2:hover {
     opacity: 1;
     background-color: #6d0f1c;
+} */
+/* intento de button con liquido */
+
+.button-CVespañol-2{
+    position: relative;
+    padding: 20px 2px;
+    display: block;
+    text-decoration: uppercase;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 40px;
 }
+a span{
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    font-family: arial;
+    letter-spacing: 8px;
+    z-index: 1;
+}
+a .liquid {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: #4973ff;
+    box-shadow: inset 0 0 50px rgba(0,0,0,.5);
+    transition: .5s;
+}
+a .liquid::after,
+ a .liquid::before{
+    content: '';
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-75%);
+    background: #000;
+}
+a .liquid::before{
+    border-radius: 45%;
+    background: rgba(20,20,20,.1);
+    animation: animate 5s linear infinite;
+}
+a .liquid::after{
+    border-radius: 40%;
+    background: rgba(20,20,20,.5);
+    animation: animate 10s linear infinite;
+}
+a:hover .liquid{
+    top: -120px;
+}
+@keyframes animate {
+    0% {
+        transform: translate(-50%,-75%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%,-75%) rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
 .miYo-1{
     width: 100%;
     height: 30%;
