@@ -92,15 +92,33 @@ rel="stylesheet" />
         <div class="containerTitulo">
             <H2>MIS PROYECTOS</H2>
             <div class="proyect-pc" >
-                <img src="https://oraclewines.onrender.com/" alt="oracle" ><a href="https://oraclewines.onrender.com/">Oracle</a></img>
+                
                 
             </div>
-        <div class="containerProyectos">
+        </div>
+        <!-- <div class="containerProyectos">
               <div class="ProyectOracle">
                   <h3>oracle wines</h3>
-              </div>
-              
-        </div>
+              </div>         
+        </div> -->
+        <div class="containerCard">
+            <div class="card" id="oracle">
+                <div class="content">
+                    <h2>01</h2>
+                    <h3>card Uno</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore hic alias facere, beatae omnis itaque fugiat in eligendi. Eius aliquid alias ratione ut iure facere praesentium maxime repellendus illo reiciendis!</p>
+                    <img src="https://oraclewines.onrender.com/" alt="oracle" ><a href="https://oraclewines.onrender.com/">Oracle</a></img>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2>02</h2>
+                    <h3>Proximamente</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore hic alias facere, beatae omnis itaque fugiat in eligendi. Eius aliquid alias ratione ut iure facere praesentium maxime repellendus illo reiciendis!</p>
+                </div>
+            </div>
+          </div>
+        
     </section>
     <section class="skills" id="skill">
         <div class="tituloSkills">TECNOLOGIAS </div>
@@ -147,11 +165,25 @@ rel="stylesheet" />
             </div>    
         </div>
     </section>
-    <section class="contact" id="contact"></section>    
+    <section class="contact" id="contact">
+        <div class="containerCard1">
+            
+          </div>
+
+    </section>    
     
     </div>   
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="js/main.js"></script> 
     <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 1,
+        });
+    </script>
 </body>
 </html>
