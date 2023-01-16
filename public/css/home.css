@@ -297,7 +297,12 @@ i {
 
  */
  /* ------ about ------- */
- 
+.about-me{
+    padding: 30px;
+    width: 100%;
+    color: antiquewhite;
+    text-align: center;
+}
 
 .about{
     width: 100%;
@@ -623,7 +628,7 @@ a:hover .liquid{
   /* contact */
 
   .contact{
-    padding: 2px;
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -681,6 +686,7 @@ a:hover .liquid{
     font-size: 25px;
     color: antiquewhite;
     display: flex;
+    padding: 30px;
 
   }
   .text{
@@ -810,4 +816,19 @@ a:hover .liquid{
 }
 .check:checked:before{
     background: #00a1ff;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(34, 34, 34);
+}
+.container-redes{
+    border-top: 1px solid rgb(84, 84, 84);
+    width: 80%;
+    display: flex;
+    justify-content: center;
+   
+}
+.container-redes img{
+    width: 60%;
 }
