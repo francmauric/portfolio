@@ -620,6 +620,16 @@ a:hover .liquid{
     background-size: contain;
     background-position: center;
   }
+  #dashboardOracle{
+    background-image: url("/images/dashboard.jpg");
+    background-size:cover;
+    background-position: center;
+  }
+  #apiclima{
+    background-image: url("/images/apiclima.jpg");
+    background-size: cover;
+    background-position: center;
+  }
   .number-oracle{
   color: rgba(40 38 38 / 9%);
   }
