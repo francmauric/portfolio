@@ -630,10 +630,16 @@ a:hover .liquid{
     background-size: cover;
     background-position: center;
   }
+
   .number-oracle{
   color: rgba(40 38 38 / 9%);
   }
 
+  #netflix-clone{
+    background-image: url("/images/netflix-clone.jpg");
+    background-size: cover;
+    background-position: center; 
+  }
 
   /* contact */
 
