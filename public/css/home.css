@@ -3,7 +3,7 @@
     
 }
 body{
-
+    
     box-sizing: border-box;
     font-family: 'Roboto Serif', serif;
     margin: 0;
@@ -637,6 +637,12 @@ a:hover .liquid{
 
   #netflix-clone{
     background-image: url("/images/netflix-clone.jpg");
+    background-size: cover;
+    background-position: center; 
+  }
+
+  #peluqueria {
+    background-image: url("/images/peluqueria.png");
     background-size: cover;
     background-position: center; 
   }
